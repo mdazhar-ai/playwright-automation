@@ -36,7 +36,7 @@ jobs:
         env:
           USER_EMAIL: ${{ secrets.USER_EMAIL }}
           USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
-        run: npx playwright test tests/api
+        run: npx playwright test
 
       # 📊 Upload report (even if tests fail)
       - name: Upload Playwright Report
